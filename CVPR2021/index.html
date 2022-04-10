@@ -1,0 +1,485 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <meta name="keywords" content="cvpr, workshop, computer vision, natural language processing, computer graphics, visual learning, machine learning">
+
+  <link rel="shortcut icon" href="static/img/site/favicon.png">
+
+  <title>L3DS @CVPR21</title>
+  <meta name="description" content="Language for 3D Scenes, CVPR 2021 Workshop">
+
+  <!--Open Graph Related Stuff-->
+  <meta property="og:title" content="Language for 3D Scenes Workshop"/>
+  <meta property="og:url" content="https://language3dscenes.github.io?v=2"/>
+  <meta property="og:description" content="Language for 3D Scenes, CVPR 2021 Workshop"/>
+  <meta property="og:site_name" content="Language for 3D Scenes Workshop"/>
+  <meta property="og:image" content="https://language3dscenes.github.io/static/img/site/teaser.jpg?v=2"/>
+
+  <!--Twitter Card Stuff-->
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="Language for 3D Scenes Workshop"/>
+  <meta name="twitter:image" content="https://language3dscenes.github.io/static/img/site/teaser.jpg?v=2">
+  <meta name="twitter:url" content="https://language3dscenes.github.io?v=2"/>
+  <meta name="twitter:description" content="Language for 3D Scenes, CVPR 2021 Workshop"/>
+
+  <!-- CSS  -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.css">
+  <link rel="stylesheet" href="static/css/main.css" media="screen,projection">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.3/clipboard.min.js"></script>
+</head>
+
+  <body>
+
+    <!-- <div class="top-strip"></div> -->
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/"></a>
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <div class="navbar-collapse collapse" id="navbar-main">
+      <ul class="nav navbar-nav">
+        <li><a href="#intro">Introduction</a></li>
+        <li><a href="#schedule">Schedule</a></li>
+        <li><a href="#speakers">Invited Speakers</a></li>
+        <li><a href="#organizers">Organizers</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+
+    <div class="container">
+      <div class="page-content">
+          <p><br /></p>
+<div class="row">
+  <div class="col-xs-12">
+    <center><h1>1st Workshop on Language for 3D Scenes</h1></center>
+    <center><h2>CVPR 2021 Workshop</h2></center>
+    <!-- <center>June 25, 2021</center> -->
+  </div>
+</div>
+
+<hr />
+
+
+<br>
+  <center>
+  <h1 style="color:red"><a href="https://www.youtube.com/watch?v=gyJDGrbLknI">The <b>video recording</b> of this workshop is here!</a></h1>
+  </center>
+<br>
+
+
+
+
+
+<div class="row" id="intro">  
+    <div>  
+    <img src="static/img/site/teaser.jpg" style="width: 100%; height: auto;"/>
+  </div>
+</div>
+
+
+<!-- <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6"> 
+  <img src="static/img/site/a.png">
+</div>
+
+<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6"> 
+  <img src="static/img/site/b.png">
+</div>
+ -->
+
+
+
+
+
+
+<p><br /></p>
+<div class="row" id="cfp">
+  <div class="col-xs-12">
+    <h2>Introduction</h2>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <p>
+      This is the first workshop on natural language and 3D-oriented object understanding of real-world scenes. Our primary goal is to spark research interest in this emerging area, and we set two objectives to achieve this. Our first objective is to bring together researchers interested in natural language and object representations of the physical world. This way, we hope to foster a multidisciplinary and broad discussion on how humans use language to communicate about different aspects of objects present in their surrounding 3D environments. The second objective is to benchmark progress in connecting language to 3D to identify and localize 3D objects with natural language. Tapping on the recently introduced large-scale datasets of <b>ScanRefer</b> and <b>ReferIt3D</b>, we host two benchmark challenges on language-assisted <i>3D localization and identification tasks</i>. The workshop consists of presentations by experts in the field and short talks regarding methods addressing the benchmark challenges designed to highlight the emerging open problems in this area.
+    </p>
+  </div>
+</div>
+
+<p><br /></p>
+<div class="row" id="cfp">
+  <div class="col-xs-12">
+    <h2>Challenges</h2>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <p>
+      We establish two challenges:
+    </p>
+    <ul>      
+
+      <li>
+        <strong>3D Object Localization</strong>: to predict a bounding box in a 3D scene corresponding to an object described in natural language
+      </li>      
+      <li>
+        <strong>Fine-grained 3D Object Identification</strong>: to identify a referred object among multiple objects in a 3D scene given natural or spatial-based language
+      </li>
+    </ul>
+
+    <div class="row" id="tasks">
+
+      <div class="col-md-6">
+        <img src="static/img/site/localization.jpg" height="180px"/>
+        <p>3D Object Localization</p>
+      </div>
+      <div class="col-md-6">
+        <img src="static/img/site/identification.png" height="180px"/>
+        <p>Fine-grained 3D Object Identification</p>
+      </div>
+      <!-- <div class="col-md-4">
+        <p>&nbsp;</p>
+      </div> -->
+      <!-- <div class="col-md-4">
+        <img src="/cvpr2021workshop/static/img/scene_type_classification.jpg">
+        <p>Scene type classification</p>
+      </div> -->
+    </div>
+
+    <p>
+      For each task the challenge participants are provided with prepared training, and test datasets, and automated evaluation scripts. The winner of each task will give a short talk describing their method during this workshop.
+      <!-- In addition to the public train-val-test split, benchmarking is done on a hidden test set whose raw data can be downloaded without annotations; 
+      in order to participate in the benchmark, the predictions on the hidden test set are uploaded to the evaluation server, where they are evaluated.        -->
+    </p>
+
+    <p>
+      The challenge leaderboard is online. If you want to join the challenge, see more details here:
+    </p>
+    <ul>      
+      <li>
+        <strong><b><a href="http://kaldir.vc.in.tum.de/scanrefer_benchmark/">ScanRefer Challenge</a></b></strong>
+      </li>
+      <li>
+        <strong><b><a href="https://referit3d.github.io/benchmarks.html"> ReferIt3D Challenge</a></b></strong>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<p><br /></p>
+<div class="row" id="dates">
+  <div class="col-xs-12">
+    <h2>Important Dates</h2>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <table class="table table-striped">
+      <tbody>
+        <tr>
+          <td>ScanRefer Challenge Submission Deadline</td>
+          <td><strike>May 31 2021</strike></td>
+        </tr>
+        <tr>
+          <td>Notification to ScanRefer Challenge Winner</td>
+          <td><strike>June 1 2021</td>
+        </tr>
+        <tr>
+          <td>ReferIt3D Challenge Submission Deadline</td>
+          <td><strike>June 11 2021</strike></td>
+        </tr>
+        <tr>
+          <td>Notification to ReferIt3D Challenge Winner</td>
+          <td><strike>June 12 2021</strike></td>
+        </tr>
+        <tr>
+          <td>Workshop Date</td>
+          <td><strike>June 25 2021 (<span style="background-color:lightcoral;">Day 7 of CVPR 2021</span>)</strike></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<p><br /></p>
+<div class="row" id="schedule">
+  <div class="col-xs-12">
+    <h2>Schedule (Pacific Time Zone)</h2>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+     <table class="table table-striped">
+      <tbody>
+        <!-- <tr><td>TBD</td><td>TBD</td></tr> -->
+        <tr>
+          <td>Welcome and Introduction</td>
+          <td>12:00 - 12:10</td>
+        </tr>
+        <tr>
+          <td><i>From Disembodied to Embodied Grounded Language</i> (<strong>Dhruv Batra</strong>)</td>
+          <td>12:10 - 12:40</td>
+        </tr>
+        <tr>
+          <td><i>Generating Animated Videos of Human Activities from Natural Language Descriptions</i> (<strong>Raymond Mooney</strong>)</td>
+          <td>12:40 - 13:10</td>
+        </tr>
+        <tr>
+          <td>Winner Talk for ScanRefer</td>
+          <td>13:10 - 13:20</td>
+        </tr>
+        <tr>
+          <td><i>Affordances for Action in 3D Spaces</i> (<b>Kristen Grauman</b>)</td>
+          <td>13:20 - 13:50</td>
+        </tr>
+        <tr>
+          <td>Break </td>
+          <td>13:50 - 14:20</td>
+        </tr>
+        <tr>
+          <td><i>The Semantics and Pragmatics of Reference to 3D Objects</i> (<b>Noah Goodman</b>)</td>
+          <td>14:20 - 14:50</td>
+        </tr>
+        <tr>
+          <td>Winner Talk for ReferIt3D</td>
+          <td>14:50 - 15:00</td>
+        </tr>
+        <tr>
+          <td><i>Language Grounding Using Neural 3D Scene Representations</i> (<strong>Katerina Fragkiadaki</strong>)</td>
+          <td>15:00 - 15:30</td>
+        </tr>
+        <tr>
+          <td>Panel Discussion and Conclusion</td>
+          <td>15:30 - 16:00</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<p><br /></p>
+<div class="row" id="speakers">
+  <div class="col-xs-12">
+    <h2>Invited Speakers</h2>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-2">
+    <a href="https://www.cc.gatech.edu/~dbatra/"><img class="people-pic" style="float:left;margin-right:50px;" src="static/img/people/batra.jpeg" /></a>
+  </div>
+  <div class="col-md-10">
+    <p>
+      <b><a href="https://www.cc.gatech.edu/~dbatra/">Dhruv Batra</a></b> is an Associate Professor in the School of
+      Interactive Computing at Georgia Tech and a Research Scientist at Facebook AI Research (FAIR).
+      His research interests lie at the intersection of machine learning, computer vision, natural language processing,
+      and AI. The long-term goal of his research is to develop agents that 'see' (or more generally
+      perceive their environment through vision, audition, or other senses), 'talk' (i.e. hold a natural language dialog
+      grounded in their environment), 'act' (e.g. navigate their environment and interact with it to accomplish goals),
+      and 'reason' (i.e., consider the long-term consequences of their actions).
+      He is a recipient of the Presidential Early Career Award for Scientists and Engineers (PECASE) 2019.
+    </p>
+  </div>
+</div>
+<p><br /></p>
+
+<div class="row">
+  <div class="col-md-2">
+    <a href="https://www.cs.utexas.edu/~mooney/"><img class="people-pic" style="float:left;margin-right:50px;" src="static/img/people/mooney_raymond.jpeg" /></a>
+  </div>
+  <div class="col-md-10">
+    <p>
+      <b><a href="https://www.cs.utexas.edu/~mooney/">Raymond Mooney</a></b> is a Professor in the Department of Computer Science at the University of Texas at Austin. He received his Ph.D. in 1988 from the University of Illinois at Urbana/Champaign. He is an author of over 160 published research papers, primarily in the areas of machine learning and natural language processing. He was the President of the International Machine Learning Society from 2008-2011, program co-chair for AAAI 2006, general chair for HLT-EMNLP 2005, and co-chair for ICML 1990. He is a Fellow of the American Association for Artificial Intelligence, the Association for Computing Machinery, and the Association for Computational Linguistics and the recipient of best paper awards from AAAI-96, KDD-04, ICML-05 and ACL-07.
+    </p>
+  </div>
+</div>
+
+
+<p><br /></p>
+<div class="row">
+  <div class="col-md-2">
+    <a href="https://www.cs.utexas.edu/users/grauman/"><img class="people-pic" style="float:left;margin-right:50px;" src="static/img/people/grauman_kristen.jpeg" /></a>
+  </div>
+  <div class="col-md-10">
+    <p>
+      <b><a href="https://www.cs.utexas.edu/users/grauman/">Kristen Grauman</a></b> is a Professor in the Department of
+      Computer Science at the University of Texas at Austin. Her primary research interests are visual recognition and
+      visual search. Prior work of Kristen's considers large-scale image/video retrieval, unsupervised visual discovery,
+      active learning, active recognition, first-person "egocentric" computer vision, interactive machine learning,
+      image and video segmentation, activity recognition, vision and language, and video summarization. She has also
+      recently established significant work on the novel problem of audio-visual understanding of scenes,
+      and fundamental works concerning visual attributes of objects and fine-grained distinctions between them.
+    </p>
+  </div>
+</div>
+
+<p><br /></p>
+<div class="row">
+  <div class="col-md-2">
+    <a href="http://cocolab.stanford.edu/ndg.html"><img class="people-pic" style="float:left;margin-right:50px;" src="static/img/people/noah.jpeg" /></a>
+  </div>
+  <div class="col-md-10">
+    <p>
+      <b><a href="http://cocolab.stanford.edu/ndg.html">Noah Goodman</a></b> is an Associate Professor of Psychology and Computer Science at Stanford University. He is interested in computational models of cognition, probabilistic programming languages, natural language semantics and pragmatics, and concepts and intuitive theories.
+      He has extensive prior work in these fields and particularly relevant to this workshop, is his foundational work in the intersection of linguistics and human-inspired computational cognitive models.
+    </p>
+  </div>
+</div>
+<p><br /></p>
+
+<div class="row">
+  <div class="col-md-2">
+    <a href="https://www.cs.cmu.edu/~katef/"><img class="people-pic" style="float:left;margin-right:50px;" src="static/img/people/fragk.jpeg" /></a>
+  </div>
+  <div class="col-md-10">
+    <p>
+      <b><a href="https://www.cs.cmu.edu/~katef/">Katerina Fragkiadaki</a></b> is an Assistant Professor in the Machine Learning Department at Carnegie Mellon.
+      Prior to joining MLD's faculty she worked as a postdoctoral researcher first at UC Berkeley working with Jitendra Malik and then
+      at Google Research in Mountain View working with the video group. Katerina is interested in building machines that understand the
+      stories that videos portray, and, inversely, in using videos to teach machines about the world. The penultimate goal is
+      to build a machine that understands movie plots, and the ultimate goal is to build a machine that would want to watch Bergman over this.
+    </p>
+  </div>
+</div>
+
+
+
+<p>
+
+  <br />
+
+
+
+
+</p>
+
+  
+</div>
+
+
+<p><br /></p>
+
+<div class="row" id="organizers">
+  <div class="col-xs-12">
+    <h2>Organizers</h2>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-xs-2">
+    <a href="http://optas.github.io">
+      <img class="people-pic" src="static/img/people/achlioptas.jpg" />
+    </a>
+    <div class="people-name">
+      <a href="http://optas.github.io">Panos Achlioptas</a>
+      <h6>Stanford University</h6>
+    </div>
+  </div>
+
+  <div class="col-xs-2">
+    <a href="https://daveredrum.github.io/">
+      <img class="people-pic" src="static/img/people/davezchen.jpg" />
+    </a>
+    <div class="people-name">
+      <a href="https://daveredrum.github.io/">Dave Zhenyu Chen</a>
+      <h6>Technical University of Munich</h6>
+    </div>
+  </div>
+
+  <div class="col-xs-2">
+    <a href="http://www.mohamed-elhoseiny.com/">
+      <img class="people-pic" src="static/img/people/elhoseiny.png" />
+    </a>
+    <div class="people-name">
+      <a href="http://www.mohamed-elhoseiny.com/">Mohamed H. Elhoseiny</a>
+      <h6>King Abdullah University of Science and Technology</h6>
+    </div>
+  </div>
+
+  <div class="col-xs-2">
+    <a href="https://angelxuanchang.github.io/">
+      <img class="people-pic" src="static/img/people/angel.jpg" />
+    </a>
+    <div class="people-name">
+      <a href="https://angelxuanchang.github.io/">Angel X. Chang</a>
+      <h6>Simon Fraser University</h6>
+    </div>
+  </div>
+
+  <div class="col-xs-2">
+    <a href="https://niessnerlab.org/members/matthias_niessner/profile.html">
+      <img class="people-pic" src="static/img/people/matthias.jpg" />
+    </a>
+    <div class="people-name">
+      <a href="https://niessnerlab.org/members/matthias_niessner/profile.html">Matthias Niessner</a>
+      <h6>Technical University of Munich</h6>
+    </div>
+  </div>
+
+  <div class="col-xs-2">
+    <a href="https://geometry.stanford.edu/member/guibas/">
+      <img class="people-pic" src="static/img/people/guibas.jpg" />
+    </a>
+    <div class="people-name">
+      <a href="https://geometry.stanford.edu/member/guibas/">Leonidas J. Guibas</a>
+      <h6>Stanford University</h6>
+    </div>
+  </div>
+</div>
+
+<div class="row" id="contact">
+  <div class="col-xs-12">
+    <h2>Contact</h2>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <p>
+      To contact the organizers please use <b>language3dscenes@gmail.com</b>
+    </p>
+  </div>
+</div>
+<p><br /></p>
+
+<hr />
+
+<div class="row">
+  <div class="col-xs-12">
+    <h2>Acknowledgments</h2>
+  </div>
+</div>
+<p><a name="/acknowledgements"></a></p>
+<div class="row">
+  <div class="col-xs-12">
+    <p>
+      Thanks to <span style="color:#1a1aff;font-weight:400;"> <a href="https://visualdialog.org/">visualdialog.org</a></span> for the webpage format.
+    </p>
+  </div>
+</div>
+
+      </div>
+    </div>
+
+  </body>
+</html>
