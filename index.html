@@ -1,24 +1,31 @@
+
 <!DOCTYPE html>
 <html>
+  <head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-<head>
-  <title>L3DS @ICCV23</title>
-  <meta http-equiv="refresh" content="2; url =/ICCV2023/index.html" />
-  <meta name="description" content="Language for 3D Scenes, ICCV 2023 Workshop">
+  <meta name="keywords" content="workshop, computer vision, audio processing, computer graphics, visual learning, machine learning">
+
+  <link rel="shortcut icon" href="static/img/site/favicon.png">
+
+  <title>M3DS @CVPR24</title>
+  <meta name="description" content="Multimodalities for 3D Scenes, CVPR 2024 Workshop">
 
   <!--Open Graph Related Stuff-->
-  <meta property="og:title" content="Language for 3D Scenes Workshop" />
-  <meta property="og:url" content="https://languagefor3dscenes.github.io/ICCV2023" />
-  <meta property="og:description" content="Language for 3D Scenes, ECCV 2022 Workshop" />
-  <meta property="og:site_name" content="Language for 3D Scenes Workshop" />
-  <meta property="og:image" content="https://languagefor3dscenes.github.io/ICCV2023/static/img/site/teaser.jpg" />
+  <meta property="og:title" content="Multimodalities for 3D Scenes Workshop"/>
+  <meta property="og:url" content="https://multimodalitiesfor3dscenes.github.io"/>
+  <meta property="og:description" content="Multimodalities for 3D Scenes, CVPR 2022 Workshop"/>
+  <meta property="og:site_name" content="Multimodalities for 3D Scenes Workshop"/>
+  <meta property="og:image" content="https://multimodalitiesfor3dscenes.github.io/static/img/site/teaser.jpg"/>
 
   <!--Twitter Card Stuff-->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Language for 3D Scenes Workshop" />
-  <meta name="twitter:image" content="https://languagefor3dscenes.github.io/ICCV2023/static/img/site/teaser.jpg">
-  <meta name="twitter:url" content="https://languagefor3dscenes.github.io/ICCV2023" />
-  <meta name="twitter:description" content="Language for 3D Scenes, ECCV 2022 Workshop" />
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="Multimodalities for 3D Scenes Workshop"/>
+  <meta name="twitter:image" content="https://multimodalitiesfor3dscenes.github.io/static/img/site/teaser.jpg">
+  <meta name="twitter:url" content="https://multimodalitiesfor3dscenes.github.io"/>
+  <meta name="twitter:description" content="Multimodalities for 3D Scenes, CVPR 2024 Workshop"/>
 
   <!-- CSS  -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -32,52 +39,463 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.3/clipboard.min.js"></script>
 
   <style>
-    .loader {
-      border: 8px solid #f3f3f3;
-      /* Light grey */
-      border-top: 8px solid #3498db;
-      /* Blue */
+
+    .people-pic {
+      max-width: 125px;
+      max-height: 125px;
+      /*width:300px;*/
+      /*height:300px;*/
+      object-fit: cover;
       border-radius: 50%;
-      width: 50px;
-      height: 50px;
-      animation: spin 2s linear infinite;
-    }
-
-    @keyframes spin {
-      0% {
-        transform: rotate(0deg);
-      }
-
-      100% {
-        transform: rotate(360deg);
-      }
-    }
+  }
   </style>
 </head>
 
-<body>
-  <div class="container">
+  <body>
 
-    <!-- Spinner -->
-    <div class="row" style="padding-top: 20vh;">
-      <div class="col-md-3"></div>
-      <div class="col-md-6" style="align-content: center; text-align: center; padding-left: 10%; ">
-        <div class="loader"></div>
-      </div>
-      <div class="col-md-3"></div>
+    <!-- <div class="top-strip"></div> -->
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/"></a>
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
     </div>
 
-    <div class="row" style="padding-top: 2vh;">
-      <div class="col-md-3"></div>
-      <div class="col-md-6" style="align-content: center;">
-        <strong>Redirecting to ICCV 23 Workshop page!</strong>
-        <br>
-        If you are not redirected in three seconds, <a href="/ICCV2023/index.html">click here</a>.
-      </div>
-      <div class="col-md-3"></div>
+    <div class="navbar-collapse collapse" id="navbar-main">
+      <ul class="nav navbar-nav">
+        <li><a href="#intro">Introduction</a></li>
+        <li><a href="#cfp">Call for papers</a></li>
+        <li><a href="#dates">Schedule</a></li>
+        <li><a href="#speakers">Invited Speakers</a></li>
+        <li><a href="#organizers">Organizers</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <!-- <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Past Workshops <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="../CVPR2021/index.html" target="__blank">CVPR 2021</a></li>
+            <li><a href="../ECCV2022/" target="__blank">ECCV 2022</a></li>
+          </ul>
+        </li> -->
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+
+    <div class="container">
+      <div class="page-content">
+          <p><br /></p>
+<div class="row">
+  <div class="col-xs-12">
+    <center><h1>1st Workshop on Multimodalities for 3D Scenes</h1></center>
+    <center><h2>CVPR 2024 Workshop</h2></center>
+    <!-- <center>Room W03 - October 3 (2:00 - 5:50 pm), 2023</center> -->
+  </div>
+</div>
+
+<hr />
+
+
+<!-- <br>
+  <center>
+  <h1 style="color:red"><a href="https://www.youtube.com/watch?v=gyJDGrbLknI">The <b>video recording</b> of this workshop is here!</a></h1>
+  </center>
+<br> -->
+
+<!-- <div class="alert alert-info" role="alert">
+  <b>Join Zoom Meeting  <a href="https://kaust.zoom.us/j/95818223470">here</a>.</b>
+</div> -->
+
+
+
+<!-- <div class="row" id="teaser">  
+    <div>  
+    <img src="static/img/site/teaser.jpg" style="width: 100%; height: auto;"/>
+  </div>
+</div> -->
+
+
+<!-- <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6"> 
+  <img src="static/img/site/a.png">
+</div>
+
+<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6"> 
+  <img src="static/img/site/b.png">
+</div>
+ -->
+
+
+
+
+
+
+<p><br /></p>
+<div class="row" id="intro">
+  <div class="col-xs-12">
+    <h2>Introduction</h2>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <p>
+      Human sensory experiences such as vision, audio, touch, and smell are the natural interfaces to perceive the world around us 
+      and reason about our environments. Understanding the 3D environments around us is important for many applications such as 
+      video processing, robotics, or augmented reality. While there have been a lot of efforts in understanding 3D scenes in recent 
+      years, most works (workshops) focus on mainly using vision to understand 3D scenes. However, vision alone does not fully 
+      capture the properties of 3D scenes, e.g., the materials of objects and surfaces, the affordance of objects, and the acoustic 
+      properties. In addition, humans use language to describe 3D scenes, and understanding 3D scenes from languages is also of 
+      vital importance. 
+
+      We believe the future is to model and understand 3D scenes and objects with rich multi-sensory inputs, including but not 
+      limited to vision, language, audio, and touch. The goal of this workshop is to unite researchers from these different 
+      sub-communities and move towards scene understanding with multi-modalities. We want to share the recent progress of 
+      multimodal scene understanding, and also to discuss which directions the field should investigate next.
+      </p>
+  </div>
+</div>
+
+<p><br /></p>
+
+<div class="row" id="cfp">
+  <div class="col-xs-12">
+    <h2>Call For Papers</h2>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+      <p>
+        <span style="font-weight:500;">Call for papers:</span> We invite non-archival papers of up to 8 pages (in CVPR format) for work 
+        on tasks related to the intersection of multimodalities and 3D object understanding in real-world scenes.
+        Paper topics may include but are not limited to:
+      </p>
+      <ul>
+        <li>3D Visual Grounding</li>
+        <li>3D Dense Captioning</li>
+        <li>3D Question Answering</li>
+        <li>Audio-visual 3D scene reconstruction and mapping</li>
+        <li>Modeling scene acoustics from visuals</li>
+        <li>Material prediction with visual/audio/tactile inputs</li>
+        <li>Implicit multimodal neural field of 3D scenes and objects</li>
+        <li>Multimodal simulation of 3D scenes and objects </li>
+      </ul>
+      <p>
+        <span style="font-weight:500;">Submission:</span> We encourage submissions of up to 8 pages, excluding references and acknowledgements.
+        The submission should be in the CVPR format.
+        Reviewing will be single-blind.
+        Accepted papers will be made publicly available as non-archival reports, allowing future submissions to archival conferences or journals.
+        We welcome already published papers that are within the scope of the workshop (without re-formatting), including papers from the main CVPR conference.
+        Please submit your paper to the following address by the deadline: 
+        <span style="color:#1a1aff;font-weight:400;"><a href="mailto:multimodalities3dscenes@gmail.com">multimodalities3dscenes@gmail.com</a></span>
+        Please mention in your email if your submission has already been accepted for publication (and the name of the conference).
+      </p>
+  </div>
+</div>                                                                                        
+
+<!-- <p><br /></p>
+<div class="row" id="cfp">
+  <div class="col-xs-12">
+    <h2>Accepted Papers</h2>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <table>
+      <tbody> 
+      <tr><td><a href="https://arxiv.org/abs/2212.01558">#1. PartSLIP: Low-Shot Part Segmentation for 3D Point Clouds via Pretrained Image-Language Models</a><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">Minghua Liu, Yinhao Zhu, Hong Cai, Shizhong Han, Zhan Ling, Fatih Porikli, Hao Su</font></td></tr>
+      <tr><td><a href="https://arxiv.org/abs/2112.08359">#2. 3D Question Answering</a><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">Shuquan Ye, Dongdong Chen, Songfang Han, Jing Liao</font></td></tr>
+      <tr><td><a href="https://arxiv.org/abs/2211.11682">#3. PointCLIP V2: Prompting CLIP and GPT for Powerful 3D Open-world Learning</a><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">Xiangyang Zhu, Renrui Zhang, Bowei He, Ziyu Guo, Ziyao Zeng, Zipeng Qin, Shanghang Zhang, Peng Gao</font></td> </tr>        
+      <tr><td><a href="https://arxiv.org/abs/2211.16312">#4. PLA: Language-Driven Open-Vocabulary 3D Scene Understanding</a> <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">Runyu Ding, Jihan Yang, Chuhui Xue, Wenqing Zhang, Song Bai, Xiaojuan Qi</font></td></tr>
+      <tr><td><a href="https://arxiv.org/abs/2303.16894">#5. ViewRefer: Grasp the Multi-view Knowledge for 3D Visual Grounding</a><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">Zoey Guo, Yiwen Tang, Ray Zhang, Dong Wang, Zhigang Wang, Bin Zhao, Xuelong Li</font></td></tr>
+      <tr><td><a href="https://arxiv.org/abs/2211.15654">#6.  OpenScene: 3D Scene Understanding with Open Vocabularies</a> <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">Songyou Peng, Kyle Genova, Chiyu "Max" Jiang, Andrea Tagliasacchi, Marc Pollefeys, Thomas Funkhouser</font></td></tr>
+      <tr><td><a href="https://openaccess.thecvf.com/content/ICCV2023/papers/Kurita_RefEgo_Referring_Expression_Comprehension_Dataset_from_First-Person_Perception_of_Ego4D_ICCV_2023_paper.pdf">#7. RefEgo: Referring Expression Comprehension Dataset from First-Person Perception of Ego4D </a> <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">Shuhei Kurita, Naoki Katsura, Eri Onami</font></td></tr>
+      <tr><td><a href="https://arxiv.org/abs/2303.12236">#8. SALAD: Part-Level Latent Diffusion for 3D Shape Generation and Manipulation</a> <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">Juil Koo, Seungwoo Yoo, Minh Hieu Nguyen, Minhyuk Sung</font></td></tr>
+      <tr><td><a href="https://3d-vista.github.io">#9. 3D-VisTA: Pre-trained Transformer for 3D Vision and Text Alignment</a> <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">Ziyu Zhu, Xiaojian Ma, Yixin Chen, Zhidong Deng, Siyuan Huang, Qing Li</font></td></tr>
+    </tbody></table>
+  </div>
+
+</div> -->
+
+<p><br /></p>
+
+<div class="row" id="dates">
+  <div class="col-xs-12">
+    <h2>Important Dates</h2>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <table class="table table-striped">
+      <tbody>
+        TBD
+        <!-- <tr>
+          <td>Call for papers & Workshop challenge announced</td>
+          <td>May 1</td>
+        </tr>
+        <tr>
+          <td>Paper & challenge submission deadline</td>
+          <td>Aug 31</td>
+        </tr>
+        <tr>
+          <td>Notifications to accepted papers & challenge winners</td>
+          <td>Sep 15 </td>
+        </tr>
+        <tr>
+          <td>Paper camera ready</td>
+          <td>Sep 22 </td>
+        </tr>
+        <tr>
+          <td>Workshop date</td>
+          <td>Oct 3 </td>
+        </tr> -->
+      
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<p><br /></p>
+<div class="row" id="schedule">
+  <div class="col-xs-12">
+    <h2>Schedule</h2>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+     <table class="table table-striped">
+      <tbody>
+        TBD
+        <!-- <tr>
+          <td>Welcome</td>
+          <td>2:00pm - 2:05pm / 5:00am - 4:05am</td>
+        </tr>
+        <tr>
+          <td>Invited Talk (Rana Hanocka)</td>
+          <td>2:05pm - 2:30pm / 5:05am - 5:30am</td>
+        </tr>
+        <tr>
+          <td>Presentation of challenge winners</td>
+          <td>2:30pm - 2:55pm / 5:30am - 5:55am</td>
+        </tr>
+        <tr>
+          <td>Poster session / Coffee break</td>
+          <td>3:00pm - 3:25pm / 6:00am - 6:25am</td>
+        </tr>
+        <tr>
+          <td>Invited Talk (Chris Paxton)</td>
+          <td>3:30pm - 4:00pm / 6:30am - 7:00am</td>
+        </tr>
+        <tr>
+          <td>Invited Talk (Or Litany)<br/>Talking to walls (...and other semantic categories)</td>
+          <td>4:00pm - 4:25pm / 7:00am - 7:25am</td>
+        </tr>
+        <tr>
+          <td>Paper spotlights</td>
+          <td>4:30pm - 4:55pm / 7:30am - 7:55am</td>
+        </tr>
+        <tr>
+          <td>Panel discussion</td>
+          <td>5:00pm - 5:40pm / 8:00am - 8:40am</td>
+        </tr>
+        <tr>
+          <td>Concluding Remarks</td>
+          <td>5:40pm - 5:50pm / 8:40am - 8:50am</td>
+        </tr> -->
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<p><br /></p>
+<div class="row" id="speakers">
+  <div class="col-xs-12">
+    <h2>Invited Speakers</h2>
+    TBD
+  </div>
+</div>
+
+<!-- <div class="row">
+  <div class="col-md-2">
+    <a href="https://people.cs.uchicago.edu/~ranahanocka/"><img class="people-pic" style="float:left;margin-right:50px;" src="static/img/people/rana.jpg" /></a>
+  </div>
+  <div class="col-md-10">
+    <p>
+      <b><a href="https://people.cs.uchicago.edu/~ranahanocka/">Rana Hanocka</a></b> She is an Assistant Professor of Computer Science at the University of Chicago. She directs 3DL, a group of enthusiastic researchers passionate about 3D, machine learning, and visual computing. She obtained her Ph.D. in 2021 from Tel Aviv University under the supervision of Daniel Cohen-Or and Raja Giryes.  Her research is focused on building artificial intelligence for 3D data, spanning the fields of computer graphics, machine learning, and computer vision. She had recent work on using text for stylizing meshes (<a href="https://threedle.github.io/text2mesh/">Text2Mesh</a>) and localizing regions on 3D shapes (<a href="https://threedle.github.io/3DHighlighter/">3DHighlighter</a>).
+    </p>
+  </div>
+</div>
+<p><br /></p> -->
+
+<!-- <p><br /></p>
+<div class="row">
+  <div class="col-md-2">
+    <a href="https://profiles.stanford.edu/silvio-savarese"><img class="people-pic" style="float:left;margin-right:50px;" src="static/img/people/silvio-savarese.png" /></a>
+  </div>
+  <div class="col-md-10">
+    <p>
+      <b><a href="https://profiles.stanford.edu/silvio-savarese">Silvio Savarese</a></b> He is Executive Vice President and Chief Scientist of Salesforce Research as well as an Adjunct Faculty of Computer Science at Stanford University, where he served as an Associate Professor with tenure until winter 2021. At Stanford he was appointed as the inaugural Mindtree Faculty Scholar in 2018 and served as a Director of the SAIL-Toyota Center for AI Research from 2016-2018. Prior to Stanford, he was an Assistant Professor of Electrical and Computer Engineering at the University of Michigan, Ann Arbor, from 2008-2013. His research interests include computer vision, robotic perception, and machine learning.  He has worked learning joint representations of language and 3D (<a href="https://mahis.life/clip-fields/">Text2Shape</a>, <a href="https://mahis.life/clip-fields/">ULIP</a>).
+    </p>
+  </div>
+</div>
+<p><br /></p> -->
+  
+</div>
+
+<!-- <p><br /></p>
+<div class="row" id="speakers">
+  <div class="col-xs-12">
+    <h2>Panelists</h2>
+  </div>
+</div> -->
+
+<!-- <div class="row">
+  <div class="col-md-2">
+    <a href="https://www.cc.gatech.edu/~dbatra/"><img class="people-pic" style="float:left;margin-right:50px;" src="static/img/people/batra.jpeg" /></a>
+  </div>
+  <div class="col-md-10">
+    <p>
+      <b><a href="https://www.cc.gatech.edu/~dbatra/">Dhruv Batra</a></b> is an Associate Professor in the School of
+      Interactive Computing at Georgia Tech and a Research Scientist at Facebook AI Research (FAIR).
+      His research interests lie at the intersection of machine learning, computer vision, natural language processing,
+      and AI. The long-term goal of his research is to develop agents that 'see' (or more generally
+      perceive their environment through vision, audition, or other senses), 'talk' (i.e. hold a natural language dialog
+      grounded in their environment), 'act' (e.g. navigate their environment and interact with it to accomplish goals),
+      and 'reason' (i.e., consider the long-term consequences of their actions).
+      He is a recipient of the Presidential Early Career Award for Scientists and Engineers (PECASE) 2019.
+    </p>
+  </div>
+</div>
+<p><br /></p>
+
+<div class="row">
+  <div class="col-md-2">
+    <a href="https://www.cs.cmu.edu/~katef/"><img class="people-pic" style="float:left;margin-right:50px;" src="static/img/people/fragk.jpeg" /></a>
+  </div>
+  <div class="col-md-10">
+    <p>
+      <b><a href="https://www.cs.cmu.edu/~katef/">Katerina Fragkiadaki</a></b> is an Assistant Professor in the Machine Learning Department at Carnegie Mellon.
+      Prior to joining MLD's faculty she worked as a postdoctoral researcher first at UC Berkeley working with Jitendra Malik and then
+      at Google Research in Mountain View working with the video group. Katerina is interested in building machines that understand the
+      stories that videos portray, and, inversely, in using videos to teach machines about the world. The penultimate goal is
+      to build a machine that understands movie plots, and the ultimate goal is to build a machine that would want to watch Bergman over this.
+    </p>
+  </div>
+</div>
+<p><br /></p>
+
+<div class="row">
+  <div class="col-md-2">
+    <a href="https://www.cs.utexas.edu/~mooney/"><img class="people-pic" style="float:left;margin-right:50px;" src="static/img/people/mooney_raymond.jpeg" /></a>
+  </div>
+  <div class="col-md-10">
+    <p>
+      <b><a href="https://www.cs.utexas.edu/~mooney/">Raymond Mooney</a></b> is a Professor in the Department of Computer Science at the University of Texas at Austin. He received his Ph.D. in 1988 from the University of Illinois at Urbana/Champaign. He is an author of over 160 published research papers, primarily in the areas of machine learning and natural language processing. He was the President of the International Machine Learning Society from 2008-2011, program co-chair for AAAI 2006, general chair for HLT-EMNLP 2005, and co-chair for ICML 1990. He is a Fellow of the American Association for Artificial Intelligence, the Association for Computing Machinery, and the Association for Computational Linguistics and the recipient of best paper awards from AAAI-96, KDD-04, ICML-05 and ACL-07.
+    </p>
+  </div>
+</div>
+<p><br /></p> -->
+
+<p><br /></p>
+
+<div class="row" id="organizers">
+  <div class="col-xs-12">
+    <h2>Organizers</h2>
+  </div>
+</div>
+
+<div class="row">
+
+  <div class="col-xs-2">
+    <a href="https://changan.io">
+      <img class="people-pic" src="static/img/people/changan.png" />
+    </a>
+    <div class="people-name">
+      <a href="https://changan.io">Changan Chen</a>
+      <h6>UT Austin</h6>
     </div>
   </div>
 
-</body>
+  <div class="col-xs-2">
+    <a href="https://angelxuanchang.github.io/">
+      <img class="people-pic" src="static/img/people/angel.jpg" />
+    </a>
+    <div class="people-name">
+      <a href="https://angelxuanchang.github.io/">Angel X. Chang</a>
+      <h6>Simon Fraser University</h6>
+    </div>
+  </div>
 
+  <div class="col-xs-2">
+    <a href="https://krrish94.github.io/">
+      <img class="people-pic" src="static/img/people/krishna.png" />
+    </a>
+    <div class="people-name">
+      <a href="https://krrish94.github.io/">Krishna Murthy</a>
+      <h6>MIT</h6>
+    </div>
+  </div>
+
+  <div class="col-xs-2">
+    <a href="https://alexanderrichard.github.io/">
+      <img class="people-pic" src="static/img/people/alex.jpg" />
+    </a>
+    <div class="people-name">
+      <a href="https://alexanderrichard.github.io/">Alexander Richard</a>
+      <h6>Meta Reality Labs Research</h6>
+    </div>
+  </div>
+
+  <div class="col-xs-2">
+    <a href="https://www.cs.utexas.edu/~grauman/">
+      <img class="people-pic" src="static/img/people/kristen.jpg" />
+    </a>
+    <div class="people-name">
+      <a href="https://www.cs.utexas.edu/~grauman/">Kristen Grauman</a>
+      <h6>UT Austin, FAIR</h6>
+    </div>
+  </div>
+
+</div>
+<p><br /></p>
+<p><br /></p>
+
+<!-- <div class="row" id="contact">
+  <div class="col-xs-12">
+    <h2>Contact</h2>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <p>
+      To contact the organizers please use <b>language3dscenes@gmail.com</b>
+    </p>
+  </div>
+</div>
+<p><br /></p> -->
+
+<hr />
+
+<div class="row">
+  <div class="col-xs-12">
+    <h2>Acknowledgments</h2>
+  </div>
+</div>
+<p><a name="/acknowledgements"></a></p>
+<div class="row">
+  <div class="col-xs-12">
+    <p>
+      Thanks to <span style="color:#1a1aff;font-weight:400;"> <a href="https://visualdialog.org/">visualdialog.org</a></span> for the webpage format.
+    </p>
+  </div>
+</div>
+
+      </div>
+    </div>
+
+  </body>
 </html>
